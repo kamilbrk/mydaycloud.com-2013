@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MyDay</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body class="logged-out home">
+
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="top-cookies hide col-xs-7 col-sm-9" aria-hidden="true">
+                    <a class="top-cookies-close text-hide">&times;</a>
+                    <p>Our website uses cookies<span> to help provide you with the best experience possible</span></p>
+                </div>
+                <div class="col-xs-5 col-sm-3">
+                    <ul class="top-actions">
+                        <li class="action-logged-out"><a href="#sign-in">Sign In <span class="glyphicon glyphicon-log-in"></span></a></li>
+                        <li class="action-logged-in"><a href="#">Kamil Burek <span class="glyphicon glyphicon-user"></span></a>
+                            <ul>
+                                <li class="action-logged-in"><a href="#">Preferences <span class="glyphicon glyphicon-cog"></span></a></li>
+                                <li class="action-logged-in-global"><a href="#">Global admin stuff #1 <span class="glyphicon glyphicon-fire"></span></a></li>
+                                <li class="action-logged-in-global"><a href="#">Global admin stuff #2 <span class="glyphicon glyphicon-cloud-download"></span></a></li>
+                                <li class="action-logged-in-global"><a href="#beta-sign-up" title="Only for now">Beta Sign Up <span class="glyphicon glyphicon-bell"></span></a></li>
+                                <li class="action-logged-in"><a href="#">Help <span class="glyphicon glyphicon-question-sign"></span></a></li>
+                                <li class="action-logged-in"><a href="#">Sign out <span class="glyphicon glyphicon-log-out"></span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <a class="brand text-hide" href="#home">MyDay</a>
+                    <p class="sr-only">MyDay Cloud tagline</p>
+                    <button type="button" class="nav-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <nav class="collapse nav-collapse" role="navigation">
+                        <ul>
+                            <li class="action-logged-out"><a class="why-myday" href="#why-myday">Why Myday</a></li>
+                            <li class="action-logged-out"><a class="engagement" href="#engagement">Student Engagement</a></li>
+                            <!-- <li class="action-logged-out"><a class="facilitating" href="#facilitating">Facilitating Work-Based Learning</a></li> -->
+                            <li class="action-logged-out"><a class="features" href="#features">Features</a></li>
+                            <li class="action-logged-out"><a class="contact-us" href="#contact-us" data-toggle="modal">Contact Us</a></li>
+                            <!-- <li class="action-logged-out"><a class="beta-sign-up btn btn-md-green" href="#beta-sign-up">Beta Sign Up</a></li> -->
+
+                            <li class="action-logged-in-tenant"><a class="connectors" href="#connectors">Connectors <span class="glyphicon glyphicon-magnet"></span></a></li>
+                            <li class="action-logged-in-tenant"><a class="data-synchronisation" href="#data-synchronisation">Data Synchronisation <span class="glyphicon glyphicon-refresh"></span></a></li>
+
+                            <li class="dropdown action-logged-in-global"><a class="global-admin" href="#">Global Admin <span class="glyphicon glyphicon-briefcase"></span></a>
+                                <ul>
+                                    <li class="action-logged-in-global"><a class="entities" href="#entities">Entities <span class="glyphicon glyphicon-th"></span></a></li>
+                                    <li class="action-logged-in-global"><a class="languages" href="#languages">Languages <span class="glyphicon glyphicon-globe"></span></a></li>
+                                    <li class="action-logged-in-global"><a class="web-templates" href="#web-templates">Web Templates <span class="glyphicon glyphicon-leaf"></span></a></li>
+                                    <li class="action-logged-in-global"><a class="connectors" href="#connectors">Connectors <span class="glyphicon glyphicon-tint"></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-7">
+                    <p>MyDay is a proven world-class information delivery platform for educational establishments. By offering easy access to existing information on internal and external systems, it can help to improve student engagement and cost-effectively facilitate work-based learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-why">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <h2>Why you need MyDay</h2>
+                    <!-- <p>Built on leading <a class="home-microsoft text-hide" href="http://www.microsoft.com/" rel="nofollow">Microsoft</a> technologies, MyDay offers easy access to existing information on college and external systems. This helps to improve student engagement and increase attendance, retention and attainmnet.</p> -->
+                    <p>MyDay delivers a low risk, simple and flexible way to leverage existing investment in your VLE and Microsoft Office 365 by providing access to information via a highly intuitive and modern-styled interface.</p>
+                    <!-- <p><a href="#why-myday">Why you need it</a></p> -->
+                    <p><a href="#why-myday">Find out more</a></p>
+                </div>
+
+                <div class="col-sm-6 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
+                    <div id="home-why-carousel" class="carousel slide">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#home-why-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#home-why-carousel" data-slide-to="1"></li>
+                            <li data-target="#home-why-carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <img src="images/home-why-1.png" alt="Why 1">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/home-why-2.png" alt="Why 2">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/home-why-3.png" alt="Why 3">
+                            </div>
+
+                        </div>
+
+                        <a class="left carousel-control" href="#home-why-carousel" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#home-why-carousel" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="home-engagement">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-offset-1 col-md-7">
+                    <h2>Improving student engagement</h2>
+                    <p>Engaged students are more likely to be successful. MyDay leverages your existing investment by delivering easy access to information on internal and external systems. This helps to improve student engagement and increase attendance, retention and attainment.</p>
+                    <p><a href="#student-engagement">Find out more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>What our users think</h2>
+
+                    <div class="row tab-content">
+                        <blockquote id="home-testimonials-barnsley" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"Now, when students logon, MyDay presents their entire college life in front of them. It pulls together all of the disparate elements that make up a student's experience into one place and enables them to engage really quickly with anything that is going on within the College."</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-hopwood" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"The learning benefits of this are clear; faster and more convenient access to important information and documents, better communication between the College and its students and more opportunities for students to collaborate and build communities amongst themselves."</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-fra" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in active">
+                            <p>"It is now much easier for users to sign-on and access all their resources from one screen. They don't have to remember multiple passwords and IDs and everything they need can be accessed with single credentials."</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-4" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"#4 The learning benefits of this are clear; faster and more convenient access to important information and documents, better communication between the College and its students and more opportunities for students to collaborate and build communities amongst themselves."</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-5" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"#5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptas natus harum ab amet est repellendus exercitationem vel! Laborum, odit, nemo numquam veniam eius deserunt reiciendis odio doloribus assumenda voluptate."</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-6" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"#6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quaerat temporibus magnam reprehenderit dignissimos est aliquid in sit facere minima. Facilis, eum, voluptate. Illum, natus, vero quod laboriosam molestias architecto?"</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-7" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"#7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, ratione, vitae, maxime voluptatibus explicabo maiores inventore perferendis corporis dolorem repudiandae molestiae adipisci pariatur porro exercitationem omnis laudantium reprehenderit! Aut, corporis."</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-8" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"#8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, aliquam tempora beatae officiis esse praesentium ab? Nam, veritatis, vel, quia, libero asperiores doloribus sunt voluptatem magni aliquid quidem commodi nihil."</p>
+                        </blockquote>
+                        <blockquote id="home-testimonials-9" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 tab-pane fade in">
+                            <p>"#9 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, id vel hic provident dignissimos alias repudiandae inventore earum distinctio tenetur similique recusandae saepe eveniet repellat repellendus illo voluptatum voluptatibus laudantium."</p>
+                        </blockquote>
+                    </div>
+
+                    <!-- <div id="home-testimonials-carousel" class="carousel slide">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#home-testimonials-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#home-testimonials-carousel" data-slide-to="1"></li>
+                            <li data-target="#home-testimonials-carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+
+                            <div class="item active"> -->
+
+                                <ul class="row">
+                                    <li data-target="#home-testimonials-barnsley" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-barnsley.jpg" alt="testimonials 2">
+                                        <p>Angela Foulkes, <br>VP Students <br>Barnsley College</p>
+                                    </li>
+                                    <li data-target="#home-testimonials-hopwood" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-hopwood.jpg" alt="testimonials 3">
+                                        <p>John Spindler, <br>Deputy Principal <br>Hopwood Hall College</p>
+                                    </li>
+                                    <li data-target="#home-testimonials-fra" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-fra.jpg" alt="testimonials 1">
+                                        <p>Brendan Kearney, <br>IT systems manager <br>Fashion Retail Academy</p>
+                                    </li>
+                                </ul>
+
+                            <!-- </div>
+
+                            <div class="item">
+
+                                <ul class="row">
+                                    <li data-target="#home-testimonials-4" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-4.jpg" alt="testimonials 4">
+                                        <p>John Spindler, <br>Deputy Principal <br>Hopwood Hall College</p>
+                                    </li>
+
+                                    <li data-target="#home-testimonials-5" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-5.jpg" alt="testimonials 5">
+                                        <p>John Spindler, <br>Deputy Principal <br>Hopwood Hall College</p>
+                                    </li>
+
+                                    <li data-target="#home-testimonials-6" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-6.jpg" alt="testimonials 6">
+                                        <p>John Spindler, <br>Deputy Principal <br>Hopwood Hall College</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="item">
+
+                                <ul class="row">
+                                    <li data-target="#home-testimonials-7" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-7.jpg" alt="testimonials 7">
+                                        <p>John Spindler, <br>Deputy Principal <br>Hopwood Hall College</p>
+                                    </li>
+
+                                    <li data-target="#home-testimonials-8" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-8.jpg" alt="testimonials 8">
+                                        <p>John Spindler, <br>Deputy Principal <br>Hopwood Hall College</p>
+                                    </li>
+
+                                    <li data-target="#home-testimonials-9" data-toggle="tab" class="col-sm-4">
+                                        <img src="images/home-testimonials-9.jpg" alt="testimonials 9">
+                                        <p>John Spindler, <br>Deputy Principal <br>Hopwood Hall College</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <a class="left carousel-control" href="#home-testimonials-carousel" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#home-testimonials-carousel" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-easydeploy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-offset-1 col-md-7">
+                    <h2>Easy to deploy and use</h2>
+                    <p>"The learning benefits of this are clear; faster and more convenient access to important information and documents, better communication between the College and its students and more opportunities for students to collaborate and build communities amongst themselves."</p>
+                </div>
+            </div>
+            <a class="btn btn-md-white" href="#beta-sign-up">Beta Sign Up</a>
+        </div>
+    </section>
+
+    <section class="home-21century">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+                    <h2>Supporting 21<sub>st</sub> century learners</h2>
+                    <p>It leverages existing investment in VLE's like Moodle and Microsoft Office 365 to support 21st century learners and educators to deliver a flexible and easy-to-use learning management system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-twitter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <h2 class="text-hide">Twitter</h2>
+                    <p>Currently installing MyDay Cloud in @barnsleycollege great guys there and they are giving us amazing feedback on their use of it already !</p>
+                    <p>3 hours ago</p>
+                    <a href="https://twitter.com/Collabco" rel="nofollow" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-dnt="true">Follow @Collabco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-myday-why">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <h2>Why you need MyDay</h2>
+                    <!-- <p>By offering easy access to existing information on college and external systems, MyDay helps to improve student engagement and increase attendance, retention and attainment. Built on class-leading Microsoft technologies it delivers a low risk, simple and flexible way of utilising the Cloud to leverage existing investment in Micrososft Office 356 and you VLE.</p> -->
+                    <p>MyDay delivers a low risk, simple and flexible way to leverage existing investment in your VLE and Microsoft Office 365 by providing access to information via a highly intuitive and modern-styled interface.</p>
+                    <p>By offering easy access to existing information on internal and external systems, MyDay helps to improve <a href="#engagement">student engagement</a> and helps <a href="#facilitate">facilitate work-based learning</a>.</p>
+                    <p>In particular it will help with many of the IT concerns expressed by the UCISA community:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-myday-delivery">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-sm-push-8 col-md-3 col-md-push-9">
+                    <img src="images/why-myday-delivery.png" alt="why-myday-delivery" />
+                </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-7 col-sm-pull-4 col-md-offset-1 col-md-8 col-md-pull-3">
+                    <h2>Cloud, managed services and alternative delivery models</h2>
+                    <p>MyDay is built on Microsoft Azure and Office 365. This enables rapid delivery, easy scaling, low cost of implementation and self-service capabilities to reduce running costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-myday-technology">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="images/why-myday-technology.png" alt="why-myday-technology" />
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-8">
+                    <h2>Use of technology in student's teaching</h2>
+                    <p>Leverage existing investment in your VLE to deliver its capabilities direct to a student's device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-myday-mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-sm-push-8 col-md-3 col-md-push-9">
+                    <img src="images/why-myday-mobile.png" alt="why-myday-mobile" />
+                </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-7 col-sm-pull-4 col-md-offset-1 col-md-8 col-md-pull-3">
+                    <h2>Mobile computing, anytime, anywhere with home working</h2>
+                    <p>Students and staff can access all their important information from any device with a Web browser and Internet connection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-myday-quality">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="images/why-myday-quality.png" alt="why-myday-quality" />
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-8">
+                    <h2>Providing a quality and resilient service</h2>
+                    <p>With 99% uptime guaranteed, students and staff will always be able to access the information they need irrespective of availability of on premise infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-myday-costs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-sm-push-8 col-md-3 col-md-push-9">
+                    <img src="images/why-myday-costs.png" alt="why-myday-costs" />
+                </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-7 col-sm-pull-4 col-md-offset-1 col-md-8 col-md-pull-3">
+                    <h2>Delivering services under severe financial restraint</h2>
+                    <p>Low cost and flexible subscription-based service means there is no need for large capital up-front investment. Additionally, consultancy led setup and deployment with no development required reduces onboarding time and cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <h2>Improving Student Engagement</h2>
+                    <!-- <p>By offering easy access to existing information on college and external systems, MyDay helps to improve student engagement and increase attendance, retention and attainment. Built on class-leading Microsoft technologies it delivers a low risk, simple and flexible way of utilising the Cloud to leverage existing investment in Micrososft Office 356 and you VLE.</p> -->
+                    <p>"Now, when students logon, MyDay presents their entire college life in front of them. It pulls together all of the disparate elements that make up a student’s experience into one place and enables them to engage really quickly with anything that is going on within the College."</p>
+                    <p>Angela Foulkes, Barnsley College</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement-improve">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-8">
+                    <h2>Want to improve student engagement?</h2>
+                    <p>With the competition for students intensifying for all academic institutions, the focus on student experience has increased over the last few years. Key to this has been improving student engagement as a variety of research has shown that engaged students:</p>
+                    <ul>
+                        <li>Are less likely to dropout</li>
+                        <li>Achieve higher grades</li>
+                        <li>Perform better in exams and assessments</li>
+                        <li>Have a greater sense of belonging</li>
+                        <li>Are better able to set and meet personal goals</li>
+                        <li>Persist on tasks</li>
+                    </ul>
+                    <p>Whilst wider economic restrictions and technological limitations can appear to restrict the capability to improve student engagement it is still possible to achieve rapid and cost-effective progress in this area.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement-access">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-8">
+                    <h2>MyDay – easy access to information</h2>
+                    <p>This is because most of the information that can be used to improve student engagement already exists in a variety of both internal and external systems – all that needs to be done is to find a simple and cost-effective way of bringing them together.</p>
+                    <p>MyDay is a proven world-class information delivery platform for educational establishments. By offering easy access to existing information on internal and external systems, it helps to improve student engagement and increase attendance, retention and attainment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement-influence">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-8">
+                    <h2>Impacting the factors that influence student engagement</h2>
+                    <p>By presenting their entire academic life in front of them it directly impacts the 4 areas that influence student engagement:</p>
+                    <ul>
+                        <li>Academic</li>
+                        <li>Behavioural</li>
+                        <li>Cognitive</li>
+                        <li>Affective engagement</li>
+                    </ul>
+                    <p>It pulls together all of the disparate elements that make up a student's experience into one place and enables them to engage quickly with anything that is going on within your institution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement-more">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-8">
+                    <h2>Find out more</h2>
+                    <p>Find out more <a href="#download">download our white paper and case study</a> on How MyDay helps improve student engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+
+                    <form role="form">
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="download-name" class="sr-only">Name</label>
+                                <input type="text" id="download-name" class="form-control input-lg" placeholder="Name" required>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="download-title" class="sr-only">Title</label>
+                                <input type="text" id="download-title" class="form-control input-lg" placeholder="Title">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="download-organisation-name" class="sr-only">Organisation name</label>
+                                <input type="text" id="download-organisation-name" class="form-control input-lg" placeholder="Organisation name">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="download-email" class="sr-only">Email</label>
+                                <input type="email" id="download-email" class="form-control input-lg" placeholder="Email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-offset-4 col-sm-4">
+                                <button type="submit" class="btn btn-md-green">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-7">
+                    <!-- <h2>Easy access to important information</h2> -->
+                    <h2>Your student life in one place</h2>
+                    <p>The unique and bold tile design of the MyDay interface gives users an at-a-glance view of their important information and notifications. They can then quickly and easily drill down into more detailed information by simply clicking a tile to open a detailed window. Some of the key tiles are shown below:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-key">
+        <div class="container">
+            <h2>Key features</h2>
+            <div class="row">
+
+                <div class="features-key-calendar col-xs-12 col-sm-4">
+                    <h3>My Calendar</h3>
+                    <p>Current and upcoming events listed in your calendar</p>
+                </div>
+
+                <div class="features-key-mail col-xs-12 col-sm-4">
+                    <h3>My Mail</h3>
+                    <p>Displays most recent e-mails</p>
+                </div>
+
+                <div class="features-key-epayments col-xs-12 col-sm-4">
+                    <h3>My ePayments</h3>
+                    <p>Shows current balance and recent transactions</p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="features-key-alerts col-xs-12 col-sm-4">
+                    <h3>My Alerts</h3>
+                    <p>All your latest alerts displayed in one tile</p>
+                </div>
+
+                <div class="features-key-vle col-xs-12 col-sm-4">
+                    <h3>My VLE</h3>
+                    <p>Next activity due plus count of overdue activities</p>
+                </div>
+
+                <div class="features-key-library col-xs-12 col-sm-4">
+                    <h3>My Library</h3>
+                    <p>Next book due back and any overdue items</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="features-additional">
+        <div class="container">
+            <h2>Additional features</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+                    <h2>Some of the other tiles available on the MyDay Platform include:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <ul>
+                        <li><strong>My Attendance</strong> - User's attendance for a defined period</li>
+                        <li><strong>My Learning Plan</strong> - The next goal or task that must be completed</li>
+                        <li><strong>My Print</strong> - Current print balance</li>
+                        <li><strong>My Photos</strong> - Thumbnails of images in your photo library</li>
+                        <li><strong>My Course</strong> - Learning objectives of the week</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul>
+                        <li><strong>My Linker</strong> - Picture and small amount of user definable text</li>
+                        <li><strong>SkyDrive Pro</strong> - Access to SkyDrive Pro account area</li>
+                        <li><strong>My Site Newsfeed</strong> - Summary of recent activity from their MySite newsfeed</li>
+                        <li><strong>My Newsfeed</strong> - Recent news items from subscribed newsfeeds</li>
+                        <li><strong>Advert Rotator</strong> - Banner adverts stored in a picture library</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <a class="btn btn-md-black" href="#beta-sign-up">Beta Sign Up</a> -->
+        </div>
+    </section>
+
+    <section class="features-architecture">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <h2>Architecture benefits</h2>
+                    <ul>
+                        <li><strong>Rapid delivery</strong> - consultancy led setup and deployment with no development required and a flexible API for fast customisation</li>
+                        <li><strong>Easy scaling</strong> - multi-tenant product that is scalable for all the estabilishment sizes, both nationally and internationally</li>
+                        <li><strong>Low cost of implementation</strong> - requires virtually no on-premise infrastructure</li>
+                        <li><strong>Self-service capabilities</strong> - reduces management and support overhead on institution</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <div class="features-architecture-built">
+                        <p>MyDay is built on:</p>
+                        <a class="features-architecture-windows-azure text-hide" href="http://www.windowsazure.com/" rel="nofollow">Windows Azure</a>
+                        <a class="features-architecture-office-365 text-hide" href="http://office.microsoft.com/" rel="nofollow">Office 365</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-us modal fade" id="contact-us" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <p>MyDay is developed by Collabco,<br> click to proceed to their site and make contact.</p>
+                    <a class="btn btn-md-green" href="http://www.collabco.co.uk/index.php/contact-us/">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="beta-sign-up-form">
+        <div class="container">
+            <h2>Sign up for trial</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+
+                    <form role="form">
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="beta-sign-up-first-name" class="sr-only">First name</label>
+                                <input type="text" id="beta-sign-up-first-name" class="form-control input-lg" placeholder="First name" required>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="beta-sign-up-last-name" class="sr-only">Last name</label>
+                                <input type="text" id="beta-sign-up-last-name" class="form-control input-lg" placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="beta-sign-up-email" class="sr-only">Email</label>
+                                <input type="email" id="beta-sign-up-email" class="form-control input-lg" placeholder="Email" required>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="beta-sign-up-phone-number" class="sr-only">Phone number</label>
+                                <input type="tel" id="beta-sign-up-phone-number" class="form-control input-lg" placeholder="Phone number">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <label for="beta-sign-up-organisation-name" class="sr-only">Organisation name</label>
+                                <input type="text" id="beta-sign-up-organisation-name" class="form-control input-lg" placeholder="Organisation name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <label for="beta-sign-up-type" class="sr-only">Type</label>
+                                <select id="beta-sign-up-type" class="form-control input-lg">
+                                    <option value="" selected>Type of organisation</option>
+                                    <option value="higher-education">Higher education</option>
+                                    <option value="further-continuing-education">Further / Continuing Education</option>
+                                    <option value="secondary-education">Secondary Education (K7-K12)</option>
+                                    <option value="primary-education">Primary Education</option>
+                                    <option value="education-it-company">Education I.T Company (Potential partner)</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="beta-sign-up-number-of-employees" class="sr-only">Number of employees</label>
+                                <input type="text" id="beta-sign-up-number-of-employees" class="form-control input-lg" placeholder="Number of employees">
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="beta-sign-up-number-of-students" class="sr-only">Number of students</label>
+                                <input type="text" id="beta-sign-up-number-of-students" class="form-control input-lg" placeholder="Number of students">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-offset-4 col-sm-4">
+                                <button type="submit" class="btn btn-md-green">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <p>Copyright 2013 <a href="http://mydaycloud.com">MyDay</a>. All rights reserved.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <p>Made by <a class="brand text-hide" href="http://collabco.co.uk">Collabco</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="debug">
+        <a class="logged-out">logged out</a>
+        <a class="logged-in logged-in-tenant">logged in as tenant</a>
+        <a class="logged-in logged-in-tenant logged-in-global">logged in as global admin</a>
+        <span>remove policy cookie</span>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- <script src="js/plugins.js"></script> -->
+    <script src="js/main.js"></script>
+
+    <script src="http://platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+
+    <!--<script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>-->
+</body>
+</html>

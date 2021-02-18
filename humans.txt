@@ -1,0 +1,26 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Kamil Burek -- Web Developer -- @kamilbrk
+
+# THANKS
+
+    God it's nearly done!
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+
+    HTML5 Boilerplate
+    Bootstrap 3
+
+    Normalize.css
+    Animate.css
+
+    Modernizr
+    jQuery
+
+    Sublime Text 3
+    Adobe Photoshop CC
